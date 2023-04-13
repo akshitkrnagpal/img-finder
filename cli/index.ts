@@ -13,11 +13,12 @@ import open from 'open';
 const args = arg({
   // Types
   '--port': Number,
+  '--debug': Boolean,
   // Alias
   '-p': '--port',
 });
 
-const server = fastify({ logger: true });
+const server = fastify({ logger: args['--debug'] });
 
 server.register(fastifyCors);
 server.register(fastifyStatic, {
