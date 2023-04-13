@@ -8,6 +8,7 @@ import fastify from 'fastify';
 import path from 'path';
 import isImage from 'is-image';
 import arg from 'arg';
+import open from 'open';
 
 const args = arg({
   // Types
@@ -56,4 +57,7 @@ server.get('/files', async (req, res) => {
   res.send(files);
 });
 
-server.listen({ port: args['--port'] || 5000 });
+server.listen({ port: args['--port'] || 5000 }, async (error, address) => {
+  console.log(`Server running at ${address}`);
+  await open(address);
+});
