@@ -1,15 +1,22 @@
 {
   "name": "img-finder",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "type": "module",
   "license": "MIT",
   "bin": {
     "image-finder": "./dist/cli/index.cjs"
   },
+  "bugs": "https://github.com/akshitkrnagpal/img-finder/issues",
   "files": [
+    "README.md",
+    "LICENSE",
     "bin",
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akshitkrnagpal/img-finder.git"
+  },
   "scripts": {
     "build": "yarn web:build && yarn cli:build",
     "cli:dev": "tsup --watch --onSuccess 'node dist/cli/index.cjs'",
