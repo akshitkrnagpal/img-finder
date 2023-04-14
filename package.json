@@ -20,6 +20,7 @@
     "web:preview": "vite preview"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.26.1",
     "@fastify/cors": "^8.2.1",
     "@fastify/static": "^6.10.0",
     "@preact/preset-vite": "^2.5.0",
