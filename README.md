@@ -1,5 +1,7 @@
-# img-finder ![npm](https://img.shields.io/npm/v/img-finder?style=plastic)
-> Easiest way to find images visually in a directory
+# img-finder
+[![NPM Version](https://img.shields.io/npm/v/img-finder.svg)](https://www.npmjs.com/package/img-finder)
+[![NPM License](https://img.shields.io/npm/l/img-finder.svg)](https://www.npmjs.com/package/img-finder)
+
 
 
 `img-finder` is a small utility library designed to help users find images "visually" in a directory with ease. It provides a simple and quick solution to the tedious task of manually searching through all subfolders of a folder to find a single image.
